@@ -1,0 +1,6 @@
+rabbitmq:
+  address: localhost:5672
+  username: guest
+  password: guest
+
+execution_file_path: /Users/admin/project/py-project/main.py
