@@ -1,0 +1,42 @@
+server:
+  port: 8888
+
+spring:
+  jpa:
+    database: mysql
+    show-sql: true
+    hibernate:
+      ddl-auto: none
+      naming:
+        physical-strategy: org.hibernate.boot.model.naming.PhysicalNamingStrategyStandardImpl
+#  datasource:
+#    type: com.alibaba.druid.pool.DruidDataSource
+#    druid:
+#      url: jdbc:mysql://localhost:3306/my-test?useUnicode=true&characterEncoding=utf-8&useSSL=false
+#      username: root
+#      password: root123456
+#      filters: stat
+#      maxActive: 20
+#      initialSize: 1
+#      max-wait: 6000
+#      min-idle: 1
+#      time-between-eviction-runs-millis: 60000
+#      min-evictable-idle-time-millis: 300000
+#      test-while-idle: true
+#      test-on-borrow: false
+#      test-on-return: false
+#      pool-prepared-statements: true
+#      max-open-prepared-statements: 20
+#      async-init: true
+## druid config please read https://github.com/alibaba/druid/wiki/DruidDataSource%E9%85%8D%E7%BD%AE
+
+mysql:
+  - datasource:
+      host: localhost:3306
+      username: root
+      password: root123456
+      tttt: 1234
+  - datasource:
+      host: localhost:3307
+      username: root
+      password: root123456
