@@ -35,7 +35,6 @@ mysql:
       host: localhost:3306
       username: root
       password: root123456
-      tttt: 1234
   - datasource:
       host: localhost:3307
       username: root

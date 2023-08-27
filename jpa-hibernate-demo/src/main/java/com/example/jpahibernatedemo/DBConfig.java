@@ -25,18 +25,16 @@ import javax.sql.DataSource;
 @EnableTransactionManagement
 @EnableJpaRepositories(
         entityManagerFactoryRef="customerEntityManagerFactory",
-        transactionManagerRef="transactionManagercustomerTransactionManagerPrimary",
+        transactionManagerRef="customerTransactionManager",
         basePackages= { "com.example.jpahibernatedemo.test.dao" }) //设置Repository所在及其子包位置
 public class DBConfig {
 
-    @Value("jdbc:mysql://${mysql[0].datasource.host}/my-test?useUnicode=true&characterEncoding=utf-8&useSSL=false&serverTimezone=UTC")
+    @Value("jdbc:mysql://${mysql[0].datasource.host}/tree_test?useUnicode=true&characterEncoding=utf-8&useSSL=false&serverTimezone=UTC")
     private String host;
     @Value("${mysql[0].datasource.username}")
     private String username;
     @Value("${mysql[0].datasource.password}")
     private String password;
-    @Value("jdbc:mysql://${mysql[0].datasource.tttt}/my-test?useUnicode=true&characterEncoding=utf-8&useSSL=false&serverTimezone=UTC")
-    private String tttt;
 
     // 配置第一个数据源
     // @Bean("customerDataSource") 这里的customerDataSource是数据源的名称，可以随便取，一般为数据库的名称但是要和下面的方法名一致
