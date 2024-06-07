@@ -1,0 +1,11 @@
+server:
+  port: 8888
+
+elasticsearch:
+  host: 127.0.0.1:9200
+  port: 9200
+  connTimeout: 3000
+  socketTimeout: 5000
+  connectionRequestTimeout: 1000
+#  username: elastic
+#  password: 123456

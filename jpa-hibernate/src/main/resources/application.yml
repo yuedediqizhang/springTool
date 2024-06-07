@@ -1,14 +1,14 @@
 server:
   port: 8888
 
-spring:
-  jpa:
-    database: mysql
-    show-sql: true
-    hibernate:
-      ddl-auto: none
-      naming:
-        physical-strategy: org.hibernate.boot.model.naming.PhysicalNamingStrategyStandardImpl
+#spring:
+#  jpa:
+#    database: mysql
+#    show-sql: true
+#    hibernate:
+#      ddl-auto: none
+#      naming:
+#        physical-strategy: org.hibernate.boot.model.naming.PhysicalNamingStrategyStandardImpl
 #  datasource:
 #    type: com.alibaba.druid.pool.DruidDataSource
 #    druid:
@@ -30,12 +30,12 @@ spring:
 #      async-init: true
 ## druid config please read https://github.com/alibaba/druid/wiki/DruidDataSource%E9%85%8D%E7%BD%AE
 
-mysql:
-  - datasource:
-      host: localhost:3306
-      username: root
-      password: root123456
-  - datasource:
-      host: localhost:3307
-      username: root
-      password: root123456
+#mysql:
+#  - datasource:
+#      host: localhost:3306
+#      username: root
+#      password: root123456
+#  - datasource:
+#      host: localhost:3307
+#      username: root
+#      password: root123456
